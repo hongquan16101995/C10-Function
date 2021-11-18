@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //tham trị
+    let boo = true
+    let num = 1
+
+    function check(boo, num) {
+        boo = false
+        num = 100
+    }
+
+    console.log(boo) //true
+    console.log(num) //1
+    check(boo, num)
+    console.log(boo) //true
+    console.log(num) //1
+
+    //tham chiếu
+    let arr = [true, 1]
+
+    function check1(arr) {
+        arr[0] = false
+        arr[1] = 100
+        // return arr
+    }
+
+    console.log(arr) // [true, 1]
+    check1(arr)
+    console.log(arr) // [false, 100]
+
+    //swap
+    // let num1 = 5
+    // let num2 = 10
+    //
+    // function swap(num1, num2) {
+    //     let temp = num1
+    //     num1 = num2
+    //     num2 = temp
+    //     return [num1, num2]
+    // }
+    //
+    // console.log(num1 + ", " + num2)
+    // console.log(swap(num1, num2))
+    // console.log(num1 + ", " + num2)
+</script>
+</body>
+</html>

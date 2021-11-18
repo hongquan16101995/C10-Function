@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //cú pháp hàm cơ bản
+    //function <tên hàm> (tham số 1, tham số 2,...) {
+    //      khối lệnh thực thi
+    // }
+
+    //hàm không tham số, không gtri trả về
+    function display1() {
+        let total = display4(1, 1)
+        document.write(total + "<br>")
+        document.write("HelloWorld" + "<br>")
+    }
+
+    display1()
+
+    //hàm có tham số, không gtri trả về
+    function display2(num1, num2) {
+        let total = num1 + num2
+        document.write(total)
+    }
+
+    display2(100, 20)
+    document.write("<br>")
+
+    //hàm không tham số, có gtri trả về
+    function display3() {
+        let num1 = 100
+        let num2 = 100
+        return num1 + num2
+    }
+
+    let total = display3()
+    document.write(total)
+    document.write("<br>")
+    document.write(display3())
+    document.write("<br>")
+
+
+    //hàm có tham số, có gtri trả về
+    function display4(num1, num2) {
+        return num1 + num2
+    }
+
+    let total1 = display4(1000, 1000)
+    document.write(total1)
+    document.write("<br>")
+    document.write(display4(1000, 1000))
+
+    function check(num1, num2, num3) {
+        alert(num1 + num2 + num3)
+    }
+
+    check(1, 2, "a")
+    check("1", 2, "a")
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string = "motom"
+    let arr = string.split("")
+    let count = 0
+
+    function checkPara(arr, count) {
+        if (arr[count] !== arr[arr.length - 1 - count]) {
+            return false
+        } else if (count <= arr.length / 2) {
+            return checkPara(arr, count + 1)
+        }
+        return true
+    }
+
+    console.log(checkPara(arr, count))
+</script>
+</body>
+</html>
